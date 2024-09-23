@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #fffffe;
+    --secondary-color: #888888;
+    --accent-color: #efefef;
+    --tint-color: #cdcdda;
+    --text-color: #0d0d0d;
+    --text-color-pink: #ffbbbb;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1.3rem;
+    --spacing-large: 3.2rem;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 2.4rem;
+    --font-size-xlarge: 3.2rem;
+    --font-size-xxlarge: 4.8rem;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 60%;
+    margin: auto;
+ border-collapse: collapse;
+}
+
+table,th,td{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: var(--font-size-medium);
+    padding: var(--spacing-medium);
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--tint-color);
+} 
+
+tbody tr:nth-child(odd){
+    background-color: var(--accent-color);
+} 
+
+
+
+ tbody th{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+ }
+
+  tbody tr:nth-of-type(4n) td:nth-child(2){
+    background-color: var(--text-color-pink);
+
+}
+ 
+
+tbody tr:nth-of-type(7n) td:not(:first-child):not(:last-child){
+    background-color: var(--text-color-pink);
+}
